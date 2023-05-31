@@ -1,0 +1,144 @@
+.detailsBanner {
+  width: 100%;
+  background-color: var(--black);
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.backdrop-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.lazyLoadImageBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.opacity-layer {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(4, 21, 45, 0) 0%, #04152d 79.17%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.left {
+  flex-shrink: 0;
+}
+
+.posterImg .lazyLoadImageBackground {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 700px) {
+  .posterImg .lazyLoadImageBackground {
+    max-width: 350px;
+  }
+}
+
+.right {
+  color: white;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.genres {
+  margin-bottom: 25px;
+  flex-flow: row wrap;
+}
+.overview {
+  margin-bottom: 25px;
+}
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.description {
+  line-height: 24px;
+}
+
+@media screen and (min-width: 900px) {
+  .description {
+    padding-right: px;
+  }
+}
+
+.circleRating {
+  max-width: 70px;
+  background-color: var(--black2);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .circleRating {
+    max-width: 90px;
+  }
+}
+
+.playbtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.playbtn .text {
+  font-size: 20px;
+  transition: all 0.7s ease-in-out;
+}
+
+.playbtn:hover {
+  color: var(--pink);
+}
+
+.wrapper .left {
+  flex-shrink: 0;
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  aspect-ratio: 1/1.5;
+}
+
+@media screen and (min-width:900px) {
+  .wrapper .left {
+    max-width: 350px;
+  } 
+}
+
+.wrapper .right{
+  width: 100%;
+}
+  
+.right .row {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+.right .row:nth-child(2) {
+  width: 75%;
+  margin-bottom: 50px;
+}
+
+.right .row:nth-child(5) {
+  width: 50%;
+  margin-bottom: 50px;
+}
+

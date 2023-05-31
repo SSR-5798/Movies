@@ -1,0 +1,79 @@
+.searchItem{
+    width: 125px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.posterblock {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+  margin-bottom: 25px;
+  transition: all ease .5s;
+}
+
+.posterblock:hover{
+  opacity: 0.5;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.circleRating{
+  position:absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  flex-shrink: 1;
+  bottom: -15px;
+  left:10px;
+}
+
+@media screen and (min-width:900px){
+  .circleRating {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.genres{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.name{
+  color:white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Flemanco", cursive;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.date{
+    color:white;
+    font-size: 12px;
+    opacity: 0.4;
+    margin-bottom: 20px;
+    font-family: "Flemanco", cursive;
+ }
+
+@media screen and (min-width:900px) {
+    .name{
+      font-size: 20px;
+      line-height: 1;
+    }
+    .date{
+        font-size: 16px;
+    }
+}

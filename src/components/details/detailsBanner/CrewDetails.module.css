@@ -1,0 +1,17 @@
+.info {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    display: flex;
+  }
+  
+  .infoItem {
+    margin-right: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    gap:5px;
+    align-items: center;
+  }
+  
+  .infoItem span {
+    opacity: 0.5;
+  }
